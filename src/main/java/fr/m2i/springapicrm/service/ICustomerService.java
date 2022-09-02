@@ -7,6 +7,11 @@ import java.util.List;
 
 public interface ICustomerService {
     List<Customer> findAll();
-    Customer findBydId(Long id);
+    
+    Customer findById(Long id);
+    
+    Customer save(Customer customer);
+    
+    Customer update(Long id, Customer customer);
 }
 

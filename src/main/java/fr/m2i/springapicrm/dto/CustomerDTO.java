@@ -10,37 +10,26 @@ import javax.persistence.Table;
 
 
 public class CustomerDTO {
+
     private Long id;
-    
-    @Column(name="lastname")
     private String lastname;
-    
-    @Column(name="firstname")
     private String firstname;
-    
     private String company;
-   
     private String mail;
-    
     private String phone;
-    
     private String address;
-   
     private String zipCode;
-    
-   
     private String city;
-    
-   
     private String country;
-       
     private String state;
-    
-    public CustomerDTO () {
-        
+
+    public CustomerDTO() {
+
     }
 
-    public CustomerDTO(Long id, String lastname, String firstname, String company, String mail, String phone, String address, String zipCode, String city, String country, String state) {
+    public CustomerDTO(Long id, String lastname, String firstname, String company,
+            String mail, String phone, String address, String zipCode, String city,
+            String country, String state) {
         this.id = id;
         this.lastname = lastname;
         this.firstname = firstname;
@@ -141,6 +130,4 @@ public class CustomerDTO {
     public void setState(String state) {
         this.state = state;
     }
-    
 }
-

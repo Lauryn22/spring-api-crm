@@ -49,7 +49,8 @@ public class Customer {
         
     }
 
-    public Customer(String lastname, String firstname, String company, String mail, String phone, String address, String zipCode, String city, String country, Boolean state) {
+    public Customer(Long id, String lastname, String firstname, String company, String mail, String phone, String address, String zipCode, String city, String country, Boolean state) {
+        this.id = id;
         this.lastname = lastname;
         this.firstname = firstname;
         this.company = company;
